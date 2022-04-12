@@ -1,4 +1,6 @@
+// libraries
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // screens
@@ -6,14 +8,17 @@ import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
 import CartScreen from "./screens/CartScreen";
 
+// components
+import Navigasi from "./components/Navigasi";
+import Product from "./components/Product";
+
 function App() {
   return (
     <div className="App">
-      <h1>selamat datang</h1>
-      {/* NAVBAR */}
-      {/* SIDE DRAWER */}
-      {/* BACKDROP */}
       <Router>
+        <Navigasi />  
+          <Product />
+   
         <Routes>
           <Route exact path="/" element={<HomeScreen />} />
           <Route path="/product:id" element={<ProductScreen />} />

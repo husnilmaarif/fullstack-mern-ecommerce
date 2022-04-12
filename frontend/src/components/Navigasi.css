@@ -1,0 +1,20 @@
+.cart {
+  padding: 5px;
+  background-color: rgb(134, 133, 133);
+  border-radius: 7px;
+  margin-right: 10px;
+}
+
+.shop {
+  padding: 5px;
+  background-color: rgb(134, 133, 133);
+  border-radius: 7px;
+}
+
+.cart:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.shop:hover {
+  background-color: rgb(255, 0, 0);
+}
